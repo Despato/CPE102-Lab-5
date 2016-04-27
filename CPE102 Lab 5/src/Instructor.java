@@ -7,4 +7,7 @@ public class Instructor extends Person{
 		this.birthYear = setBirthYear;
 		this.salary = setSalary;
 	}
+	public String toString(){
+		return "Instructor[super=Person[name=" + name + ",birthYear=" + birthYear + "],salary=" + salary + ".0]";
+	}
 }

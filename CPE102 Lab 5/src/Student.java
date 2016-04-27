@@ -6,4 +6,7 @@ public class Student extends Person{
 		this.birthYear = setBirthYear;
 		this.major = setMajor;
 	}
+	public String toString(){
+		return "Student[super=Person[name=" + name + ",birthYear=" + birthYear + "],major=" + major + "]";
+	}
 }
