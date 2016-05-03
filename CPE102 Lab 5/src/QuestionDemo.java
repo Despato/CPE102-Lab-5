@@ -9,8 +9,7 @@ public class QuestionDemo
       quiz[0] = new Question("Who was the inventor of Java?");
       quiz[0].setAnswer("James Gosling");      
 
-      NumericQuestion question = new NumericQuestion(
-         "What is 3 / 4?");
+      NumericQuestion question = new NumericQuestion("What is 3 / 4?");
       question.setAnswer(0.75);
       quiz[1] = question;
 
