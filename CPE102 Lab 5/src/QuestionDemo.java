@@ -6,12 +6,21 @@ public class QuestionDemo
    {
       Question[] quiz = new Question[2];
 
-      quiz[0] = new Question("Who was the inventor of Java?");
-      quiz[0].setAnswer("James Gosling");      
+      MultiChoiceQuestion question0 = new MultiChoiceQuestion(
+         "Which countries are in Africa?");
+      question0.addChoice("Ghana", true);
+      question0.addChoice("Canada", false);
+      question0.addChoice("Benin", true);
+      question0.addChoice("Denmark", false);
+      quiz[0] = question0;
 
-      NumericQuestion question = new NumericQuestion("What is 3 / 4?");
-      question.setAnswer(0.75);
-      quiz[1] = question;
+      MultiChoiceQuestion question1 = new MultiChoiceQuestion(
+         "Which of the following are vegetables?");
+      question1.addChoice("Zuchini", true);
+      question1.addChoice("Pepper", true);
+      question1.addChoice("Banana", false);
+      question1.addChoice("Cabbage", true);
+      quiz[1] = question1;
 
       Scanner in = new Scanner(System.in);
       for (Question q : quiz)

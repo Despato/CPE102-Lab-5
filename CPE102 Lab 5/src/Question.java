@@ -3,8 +3,8 @@
 */
 public class Question
 {
-   private String text;
-   private String answer;
+   protected String text;
+   protected String answer;
 
    /**
       Constructs a question with a given text and an empty answer.
@@ -41,5 +41,8 @@ public class Question
    public void display()
    {
       System.out.println(text);
+   }
+   public String toString(){
+	   return ("Question[text=" + text + ",answer=" + answer + "]");
    }
 }
