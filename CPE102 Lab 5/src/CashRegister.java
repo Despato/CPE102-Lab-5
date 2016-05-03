@@ -6,6 +6,6 @@ public class CashRegister {
 	}
 	public double purchase$$$(int pennies, int nickels, int dimes, int quarters){
 		double paid = pennies * MonetaryUnit.PENNY + nickels * MonetaryUnit.NICKEL + dimes * MonetaryUnit.DIME + quarters * MonetaryUnit.QUARTER; 
-		return paid - amntDue;
+		return Math.round((paid - amntDue));
 	}
 }

@@ -1,6 +1,6 @@
-/**
-   This class tests the Person, Student, and Instructor classes.
-*/
+/*   
+ * This class tests the Person, Student, and Instructor classes.
+
 public class PersonTester
 {
    public static void main(String[] args)
@@ -15,4 +15,4 @@ public class PersonTester
       System.out.println(e);
       System.out.println("Expected: Instructor[super=Person[name=Edgar,birthYear=1969],salary=65000.0]");
    }
-}
+}*/
